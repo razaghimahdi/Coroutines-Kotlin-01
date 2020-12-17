@@ -44,3 +44,33 @@ default android main thread has the set of regular responsibilities it has to al
 ###### Listen to users such as click evens
 So if we add more tasks to the main thread it could be app show Performance Errors, Freeze the screen, Unpredictable Behaviors,
 so we should always implement long running tasks asynchronously in a separate thread which Coroutines is the best way.
+
+
+
+##### CoroutineScopes:
+Coroutine Scopes is an interface provides the scope of coroutine,
+##### GlobalScopes:
+we have another scope interface called global scope,
+ global scope is used to launch top level coroutines which are operating on the whole application lifetime.
+ Both of these scopes also acts as a reference to the coroutine context(like:Dispatchers.io)
+ ### Dispatchers:
+ **Dispatchers.Main**: To launch coroutines in the main thread we use, which in android we call it UI thread, we should only use this Dispatchers for small light weight task.
+ **Dispatchers.io**: Coroutine will run in a background thread from a shared pool of on-demand created threads.we usually use this for local database or communicate with network and work with files
+ **Dispatchers.Default**:  For CPU intensive tasks such as sorting a large list.
+ **Dispatchers.Unconfined**: Coroutine will run in a the current thread, but if it suspended and resumed it will run on suspending function's thread. WARNING: it is not recommended to use this for android development.
+
+
+
+
+
+ #### There are 4 main coroutine builder:  launch, async, produce, runBlocking.
+ **Launch:** Launch builder launches a new coroutine without the current thread, This builder returns an instance of job,
+  which can be used as a reference to the coroutine,
+ We use this builder for coroutines  that doesn't have any result as the return value, it means we can't use this coroutines to calculate something and get the final answer as the return value.
+ **Async:** If we want to get result as a return value we should use async coroutine builder but not only that the main specialty of async builder is that it allows us to launch coroutine in parallel,
+  Async builder launches a new coroutine without blocking the current thread,
+ This builder returns an instance of deferred<T\>. we need to invoke await() to get the value. We use this builder for coroutines that does have a result as the return value.
+ **Produce:** Produce builder is for coroutines which produces a stream of elements,
+This builder returns an instance of receiveChannel, The coroutine we create using this thread will block the thread while the coroutine is executing, And it returns a result of type T.
+
+##1 15

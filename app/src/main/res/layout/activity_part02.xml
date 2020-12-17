@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".view.Part02Activity">
+
+    <TextView
+        android:id="@+id/tvCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        tools:text="Count" />
+
+    <Button
+        android:id="@+id/btnCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="4dp"
+        android:padding="15dp"
+        android:text="click here"
+        android:textColor="@android:color/white" />
+
+
+    <TextView
+        android:id="@+id/tvUserMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        android:layout_marginTop="32dp"
+        android:text="data"/>
+
+    <Button
+        android:id="@+id/btnDownloadUserData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:padding="15dp"
+        android:text="download user data"
+        android:textColor="@android:color/white"  />
+
+</LinearLayout>
