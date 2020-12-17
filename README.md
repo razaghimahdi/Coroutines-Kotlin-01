@@ -64,12 +64,15 @@ we have another scope interface called global scope,
 
 
  #### There are 4 main coroutine builder:  launch, async, produce, runBlocking.
+ 
  **Launch:** Launch builder launches a new coroutine without the current thread, This builder returns an instance of job,
   which can be used as a reference to the coroutine,
  We use this builder for coroutines  that doesn't have any result as the return value, it means we can't use this coroutines to calculate something and get the final answer as the return value.
+ 
  **Async:** If we want to get result as a return value we should use async coroutine builder but not only that the main specialty of async builder is that it allows us to launch coroutine in parallel,
   Async builder launches a new coroutine without blocking the current thread,
  This builder returns an instance of deferred<T\>. we need to invoke await() to get the value. We use this builder for coroutines that does have a result as the return value.
+ 
  **Produce:** Produce builder is for coroutines which produces a stream of elements,
 This builder returns an instance of receiveChannel, The coroutine we create using this thread will block the thread while the coroutine is executing, And it returns a result of type T.
 
