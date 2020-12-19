@@ -16,6 +16,8 @@ class Part01Activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_part01)
 
+        title="Part01Activity"
+
         btnCount.setOnClickListener {
             tvCount.text = count++.toString()
         }

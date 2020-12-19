@@ -23,9 +23,9 @@ class MainActivity : AppCompatActivity() {
 
     private fun getData(): List<InfoMain> {
         val data = listOf<InfoMain>(
-            InfoMain("Part01 Coroutines Scope:Click Event Example Without Coroutines Scope"),
+            InfoMain("Part01:Click Event Example "),
             InfoMain("Part02 Coroutines Scope:Click Event Example With Coroutines Scope"),
-            InfoMain("Part03 Coroutines Scope:Click Event Example With Coroutines Scope"),
+            InfoMain("Part03 WithContext:Click Event Example With Coroutines Scope"),
         )
 
         return data

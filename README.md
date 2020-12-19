@@ -76,4 +76,28 @@ we have another scope interface called global scope,
  **Produce:** Produce builder is for coroutines which produces a stream of elements,
 This builder returns an instance of receiveChannel, The coroutine we create using this thread will block the thread while the coroutine is executing, And it returns a result of type T.
 
-##1 15
+#### Suspending Functions:
+In Kotlin Coroutines, whenever a coroutine is suspended, the current stack frame of the function is copied and saved in the memory.
+When the function resumes after completing its task, the stack frame is copied back from where it was saved and starts running again.
+Coroutines provides us a lot of functions to make our works easy,
+Some example of Suspending Functions:
+**withContext**
+**withTimeot**
+**withTimeoutOrNull**
+**join**
+**delay**
+**await**
+**supervisorScope**
+**coroutineScope**
+
+if we are going to use a suspending function such as withContext, we have to mark our calling function with suspend modifier
+and also if we if we are going to invoke another suspending function created by us we have to also mark that calling function we suspend modifier,
+With suspend modifier we are actually limiting the use of the function only for coroutines,
+A suspending function can be called from coroutine block or from another suspending function only,
+A suspending function, can be invoked from a coroutine block or from an another suspending function only.
+A Coroutine can invoke both suspending and non suspending functions,
+But a suspending function can be invoked from a coroutine block or from an other suspending function only.
+
+So We use suspending function to avoid trip blocking and hence to provide a smooth uninterrupted expreince to our users.
+
+## 1 16
