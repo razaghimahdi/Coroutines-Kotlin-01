@@ -47,6 +47,10 @@ class Part03Activity : AppCompatActivity() {
 
                 tvUserMessage.text = "Downloading user $i in ${Thread.currentThread().name}"
             }
+            /**NOTE:so number gets change very fast,
+             * what if we want to slow down them a little bit to do that kotlin coroutine has provided delay function  */
+            kotlinx.coroutines.delay(3000)
+
         }
     }
 }

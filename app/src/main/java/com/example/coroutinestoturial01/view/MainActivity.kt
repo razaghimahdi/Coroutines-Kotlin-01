@@ -25,7 +25,8 @@ class MainActivity : AppCompatActivity() {
         val data = listOf<InfoMain>(
             InfoMain("Part01:Click Event Example "),
             InfoMain("Part02 Coroutines Scope:Click Event Example With Coroutines Scope"),
-            InfoMain("Part03 WithContext:Click Event Example With Coroutines Scope"),
+            InfoMain("Part03 WithContext:Click Event Example With Coroutines Scope, delay method"),
+            InfoMain("Part04 Async and Await: Parallel Decomposition"),
         )
 
         return data

@@ -12,6 +12,7 @@ import com.example.coroutinestoturial01.dataModel.InfoMain
 import com.example.coroutinestoturial01.view.Part01Activity
 import com.example.coroutinestoturial01.view.Part02Activity
 import com.example.coroutinestoturial01.view.Part03Activity
+import com.example.coroutinestoturial01.view.Part04Activity
 
 class MainAdapter(
     private val context: Context,
@@ -32,6 +33,7 @@ class MainAdapter(
                 0->context.startActivity(Intent(context,Part01Activity::class.java))
                 1->context.startActivity(Intent(context, Part02Activity::class.java))
                 2->context.startActivity(Intent(context, Part03Activity::class.java))
+                3->context.startActivity(Intent(context, Part04Activity::class.java))
             }
         }
 
