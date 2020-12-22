@@ -33,6 +33,7 @@ class MainAdapter(
                 3->context.startActivity(Intent(context, Part04Activity::class.java))
                 4->context.startActivity(Intent(context, Part05Activity::class.java))
                 5->context.startActivity(Intent(context, Part06Activity::class.java))
+                6->context.startActivity(Intent(context, Part07Activity::class.java))
             }
         }
 

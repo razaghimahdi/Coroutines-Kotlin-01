@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CoroutinesToturial01">
-        <activity android:name=".view.Part06Activity"></activity>
+        <activity android:name=".view.Part07Activity"></activity>
+        <activity android:name=".view.Part06Activity" />
         <activity android:name=".view.Part05Activity" />
         <activity android:name=".view.Part04Activity" />
         <activity android:name=".view.Part03Activity" />

@@ -28,7 +28,8 @@ class MainActivity : AppCompatActivity() {
             InfoMain("Part03 WithContext:Click Event Example With Coroutines Scope, delay method"),
             InfoMain("Part04 Async and Await: Parallel Decomposition"),
             InfoMain("Part05 Job: isActive, isCancelled, isCompleted"),
-            InfoMain("Part06 Unstructured Concurrency"),
+            InfoMain("Part06 Unstructured Concurrency01"),
+            InfoMain("Part06 Unstructured Concurrency02"),
         )
 
         return data

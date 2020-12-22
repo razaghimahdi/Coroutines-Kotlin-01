@@ -25,6 +25,13 @@ class UserDataManager {
     suspend fun getTotalUserCount2(): Int{
         var count = 0
 
+
+        CoroutineScope(IO).launch {
+            delay(1000)
+            count=50
+        }
+
+
         val deferred = CoroutineScope(IO).async {
             delay(3000)
             return@async 70
