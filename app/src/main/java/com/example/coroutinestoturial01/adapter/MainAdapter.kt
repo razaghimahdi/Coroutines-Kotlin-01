@@ -9,10 +9,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.coroutinestoturial01.R
 import com.example.coroutinestoturial01.dataModel.InfoMain
-import com.example.coroutinestoturial01.view.Part01Activity
-import com.example.coroutinestoturial01.view.Part02Activity
-import com.example.coroutinestoturial01.view.Part03Activity
-import com.example.coroutinestoturial01.view.Part04Activity
+import com.example.coroutinestoturial01.view.*
 
 class MainAdapter(
     private val context: Context,
@@ -34,6 +31,8 @@ class MainAdapter(
                 1->context.startActivity(Intent(context, Part02Activity::class.java))
                 2->context.startActivity(Intent(context, Part03Activity::class.java))
                 3->context.startActivity(Intent(context, Part04Activity::class.java))
+                4->context.startActivity(Intent(context, Part05Activity::class.java))
+                5->context.startActivity(Intent(context, Part06Activity::class.java))
             }
         }
 

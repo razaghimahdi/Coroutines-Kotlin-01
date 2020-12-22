@@ -19,6 +19,7 @@ class Part04Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_part04)
+        title="Part04Activity"
 
         notParallel()
 
