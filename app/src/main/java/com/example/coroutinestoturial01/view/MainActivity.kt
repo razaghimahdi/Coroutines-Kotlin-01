@@ -5,7 +5,7 @@ import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.coroutinestoturial01.R
 import com.example.coroutinestoturial01.adapter.MainAdapter
-import com.example.coroutinestoturial01.dataModel.InfoMain
+import com.example.coroutinestoturial01.model.InfoMain
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -29,7 +29,10 @@ class MainActivity : AppCompatActivity() {
             InfoMain("Part04 Async and Await: Parallel Decomposition"),
             InfoMain("Part05 Job: isActive, isCancelled, isCompleted"),
             InfoMain("Part06 Unstructured Concurrency01"),
-            InfoMain("Part06 Unstructured Concurrency02"),
+            InfoMain("Part07 Unstructured Concurrency02"),
+            InfoMain("Part08 ViewModelScope"),
+            InfoMain("Part08 lifecycleScope"),
+            InfoMain("Part08 live data"),
         )
 
         return data

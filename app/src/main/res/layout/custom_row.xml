@@ -21,7 +21,7 @@
         android:id="@+id/list_nav_title"
         android:text="Blank"
         android:textStyle="bold"
-        android:textSize="15sp"
+        android:textSize="13sp"
         android:textColor="#000"/>
 
 <View
