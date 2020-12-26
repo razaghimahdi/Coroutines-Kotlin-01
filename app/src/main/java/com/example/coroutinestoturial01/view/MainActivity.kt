@@ -31,8 +31,9 @@ class MainActivity : AppCompatActivity() {
             InfoMain("Part06 Unstructured Concurrency01"),
             InfoMain("Part07 Unstructured Concurrency02"),
             InfoMain("Part08 ViewModelScope"),
-            InfoMain("Part08 lifecycleScope"),
-            InfoMain("Part08 live data"),
+            InfoMain("Part09 lifecycleScope"),
+            InfoMain("Part10 live data"),
+            InfoMain("Part11 Retrofit"),
         )
 
         return data

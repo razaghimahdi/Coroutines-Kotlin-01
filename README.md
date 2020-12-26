@@ -88,5 +88,15 @@ But a suspending function can be invoked from a coroutine block or from an other
 
 So We use suspending function to avoid trip blocking and hence to provide a smooth uninterrupted expreince to our users.
 
+## Retrofit & Coroutine:
+#### There are 3 steps of using retrofit:
+Data Classes( to convert JSON data we need to create data classes)
+Service Interface( to define functions with URL)
+Retrofit Instance
+
+
+
 <img src="screenshots/Screenshot_20201224_185126.png" width="300">
 <img src="screenshots/Screenshot_20201224_185136.png" width="300">
+
+## 23
