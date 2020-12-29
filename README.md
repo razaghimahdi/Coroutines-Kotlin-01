@@ -51,9 +51,6 @@ we have another scope interface called global scope,
  **Dispatchers.Unconfined**: Coroutine will run in a the current thread, but if it suspended and resumed it will run on suspending function's thread. WARNING: it is not recommended to use this for android development.
 
 
-
-
-
  ** There are 4 main coroutine builder:**  launch, async, produce, runBlocking.
   **Launch:** Launch builder launches a new coroutine without the current thread, This builder returns an instance of job,
   which can be used as a reference to the coroutine,
@@ -96,7 +93,13 @@ Retrofit Instance
 
 
 
-<img src="screenshots/Screenshot_20201224_185126.png" width="300">
-<img src="screenshots/Screenshot_20201224_185136.png" width="300">
 
-## 23
+### Some Note:
+**viewModelScope.launch** is only available in your ViewModels
+and **lifecycleScope.launch** in your lifecycle aware components.
+
+
+
+<img src="screenshots/Screenshot_20201229_185315.png" width="300">
+<img src="screenshots/Screenshot_20201229_185455.png" width="300">
+

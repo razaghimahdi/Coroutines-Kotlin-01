@@ -34,6 +34,7 @@ class MainActivity : AppCompatActivity() {
             InfoMain("Part09 lifecycleScope"),
             InfoMain("Part10 live data"),
             InfoMain("Part11 Retrofit"),
+            InfoMain("Part12 Project: Room,MVVM"),
         )
 
         return data
